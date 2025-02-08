@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #010113;
+}
+.buttons {
+    display: flex;
+    column-gap: 3rem;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+  
+.btn-bir:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+  
+.btn-bir {
+    background-image: linear-gradient(
+        to right,
+        #314755 0%,
+        #26a0da 51%,
+        #314755 100%
+    );
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px #eee;
+    border: 2px solid #000000 !important;
+    border-radius: 10px !important;
+    display: block;
+}
+.box{
+    position: relative;
+    width: 20rem;
+    height: 25rem;
+    cursor: pointer;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./background.avif");
+    background-size: cover;
+    transition: 1s;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px;
+}
+
+.box:hover .bg{
+    transform: perspective(20px) rotateX(2deg) translateY(-50px);
+}
+
+.bird{
+    position: absolute;
+    width: 20rem ;
+    height: 20rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: gifAnimation 0.2s linear infinite;
+    animation-play-state: paused!important;
+    transition: 1s;
+}
+
+.box:hover .bird{
+    animation-play-state:running!important;
+    transform: translateY(-200px) translateX(-10px);
+}
+
+@keyframes gifAnimation{
+    from{
+        background-image: url("./bird1.png");
+    }
+    to{
+        background-image: url("./bird2.png");
+    }
+}

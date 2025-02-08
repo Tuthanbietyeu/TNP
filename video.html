@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sở thích</title>
+    <style>
+        /* Reset một số kiểu mặc định */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background cho toàn bộ trang */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #020c1d;
+            color: #333;
+        }
+
+        /* Style cho phần Header */
+        header {
+            background-color: #34db66;
+            padding: 30px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            border-bottom: 5px solid #29b971;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .buttons {
+    display: flex;
+    column-gap: 3rem;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+  
+.btn-bir:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+  
+.btn-bir {
+    background-image: linear-gradient(
+        to right,
+        #314755 0%,
+        #26a0da 51%,
+        #314755 100%
+    );
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px #eee;
+    border: 2px solid #000000 !important;
+    border-radius: 10px !important;
+    display: block;
+}
+
+        /* Section chính cho video */
+        .video-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .video-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 200px;
+        }
+
+        .video-card h3 {
+            padding: 15px;
+            font-size: 20px;
+            background-color: #3498db;
+            color: white;
+            margin-top: 0;
+        }
+
+        .video-card p {
+            padding: 15px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Phần header -->
+    <header>
+        <div class="buttons">
+            <a href="./phúc/index.html" class="btn btn-bir">Quay lại</a>
+        </div>
+        <h1>Sở thích</h1>
+        <p>Chào mừng bạn đến với kho video cá nhân của tôi!</p>
+    </header>
+
+    <!-- Phần nội dung video -->
+    <div class="video-section">
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/pLlR3iwK1rM?si=4WKcUoy-8ErIe0xD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+            <h3>Nhạc</h3>
+            <p>Đây là bài nhạc ưu thích của tôi</p>
+        </div>
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/Hq_jSugJfFE?si=9rnzggFg_F0EJZ1N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Thể thao</h3>
+            <p>Đây là môn thể thao ưu thích của tôi</p>
+        </div>
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/U5f8dX5KmB8?si=N9McCEJL-CQh4Our" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Game</h3>
+            <p>Đây là mô tả game ưu thích của tôi</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Trần Ngọc Phúc.</p>
+    </footer>
+
+</body>
+</html>
